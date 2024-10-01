@@ -1,0 +1,11 @@
+Monitoring:
+Prometheus Deployment:
+
+Prometheus is deployed on the ECS cluster to scrape metrics from the microservices.
+It scrapes metrics exposed by the /metrics endpoints of the microservices.
+G
+rafana Deployment:
+
+Grafana is deployed to visualize metrics collected by Prometheus.
+Configure Prometheus in Grafana:
+Add Prometheus as a data source in Grafana:
