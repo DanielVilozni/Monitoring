@@ -1,0 +1,22 @@
+[
+    {
+      "name": "prometheus",
+      "image": "prom/prometheus:latest",
+      "essential": true,
+      "cpu": 256,
+      "memory": 512,
+      "portMappings": [
+        {
+          "containerPort": 9090,
+          "hostPort": 9090
+        }
+      ],
+      "mountPoints": [
+        {
+          "sourceVolume": "prometheus_data",
+          "containerPath": "/prometheus"
+        }
+      ]
+    }
+  ]
+  
